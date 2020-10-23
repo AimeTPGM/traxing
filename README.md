@@ -1,5 +1,7 @@
 # Traxing
 
+Demo: https://aimetpgm.github.io/traxing/
+
 <img width="1680" alt="Screen Shot 2563-10-24 at 03 22 29" src="https://user-images.githubusercontent.com/5433758/97050803-3c94b600-15a8-11eb-8b63-37fca963201f.png">
 
 This project aims to collect the votes from Thai ppl on social media to visualize where they wish their paid tax will go to.
