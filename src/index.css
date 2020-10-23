@@ -9,6 +9,8 @@ body {
 
 body, input, button {
     font-family: BangnaNew;
+    background: #222;
+    color: white;
 }
 
 h1 {
