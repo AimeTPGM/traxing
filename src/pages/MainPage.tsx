@@ -2,9 +2,10 @@
 import { jsx, css } from '@emotion/core';
 import React from 'react';
 import TopicVoter from '../components/TopicVoter';
+import { Link } from "react-router-dom";
 
 export default () => {
-    return (<div css={{ margin: '20vh 100px 100px'}}>
+    return (<div css={{ margin: '15vh 100px 100px'}}>
         <h1 css={{ margin: '50px'}}>
             <span css={{ fontSize: '2.5em' }}>
                 อยากให้
@@ -20,6 +21,9 @@ export default () => {
             {topic.map(item => {
                 return (<TopicVoter name={item.name} color={item.color} />);
             })}
+        </div>
+        <div css={{ textAlign: 'center', margin: '50px 0' }}>
+            <Link to="/summary">ดูผลโหวต</Link>
         </div>
     </div>);
 };
