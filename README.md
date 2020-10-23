@@ -1,7 +1,5 @@
 # Traxing
 
-อยากให้ภาษีเราไปลงที่ไหน?
-
 <img width="1680" alt="Screen Shot 2563-10-24 at 03 22 29" src="https://user-images.githubusercontent.com/5433758/97050803-3c94b600-15a8-11eb-8b63-37fca963201f.png">
 
 This project aims to collect the votes from Thai ppl on social media to visualize where they wish their paid tax will go to.
@@ -16,6 +14,10 @@ This project aims to collect the votes from Thai ppl on social media to visualiz
 - Country's Security
 - Social Justice
 
+respectively
+
+# start the contribution
+
 to run the project
 
 ```
@@ -24,8 +26,6 @@ npm start
 ```
 
 it will run at `localhost:3000`
-
-# start the contribution
 
 starting from `/src/App` there will be a router to each pages 
 
