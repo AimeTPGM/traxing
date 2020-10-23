@@ -2,6 +2,18 @@
 
 อยากให้ภาษีเราไปลงที่ไหน?
 
+This project aims to collect the votes from Thai ppl on social media to visualize where they wish their paid tax will go to.
+
+- Education
+- Economic
+- Agriculture
+- Medical
+- Transportation
+- Technology
+- Environment
+- Country's Security
+- Social Justice
+
 to run the project
 
 ```
@@ -11,15 +23,11 @@ npm start
 
 it will run at `localhost:3000`
 
-# เริ่ม contribute
+# start the contribution
 
-เข้าไปดูใน /src/pages/MainPage หน้าแรกมันจะเริ่มจากตรงนี้ (ตอนนี้มีหน้าเดียว) 
+starting from `/src/App` there will be a router to each pages 
 
-มีคอมโพเน้นที่ยังไม่ได้ทำ ปั่นอยู่จ่ะ (จะเปิด issue มาบอกว่าทำอะไรอยู่ก็ได้นะ)
-
-อยากได้อะไร create new issue เลยค่า
-
-# เวลาเปิด PR capture screenshot ให้ดูหน่อยเน้อ จะได้รีวิวให้ได้เร็วๆค่ะ
+`/src/pages/MainPage` is the main page of the app :) 
 
 # project structure
 
@@ -36,13 +44,13 @@ src
 
 ```
 
-asset เอาไว้ใส่รูป ใส่ฟ้อนท์
+asset is for keeping photos, icons, fonts, etc
 
-pages เอาไว้ใส่หน้าใหม่ๆ 
+pages contains page of the app
 
-components เอาไว้ใส่ component to be reused
+components is for keeping the components of the app
 
-containers เอาไว้ใส่ wrapper ของคอนเท็นแต่ละช่วงต่างๆ เวลาสร้างคอนเทนเนอร์ใหม่ ใช้ className={'container'} นะคะ
+containers is for keeping wrapper of a content section. If you are creating a new container, please use `className={'container'}`
 
 
 # lib in this project
@@ -59,6 +67,6 @@ https://reactrouter.com/web/guides/quick-start
 https://medium.com/@mossila/%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99-react-route-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-typescript-e7dc70885122
 https://medium.com/react-courses/how-to-integrate-routing-in-typescript-project-with-react-router-v5-2-0-a6b0ab160a1b
 
-# ถ้าส่วนไหนที่กำลัง develop อยู่
+# UnderDevelopment ?
 
-แต่ยังไม่เสร็จทั้งหมดดี สามารถใช้ component `<UnderDevelopment />` ได้นะคะ
+you can use component `<UnderDevelopment />` as a mark of any part of screen that's underdevelopment :) 
