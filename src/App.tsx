@@ -1,8 +1,7 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
-import React, { Component } from 'react';
+import { jsx } from '@emotion/core';
+import { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
-import UnderDevelopment from './components/UnderDevelopment';
 import MainPage from './pages/MainPage';
 import SummaryPage from './pages/SummaryPage';
 

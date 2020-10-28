@@ -1,11 +1,10 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
-import React from 'react';
+import { jsx } from '@emotion/core';
 import { mediaMaxWidth } from '../util';
 
-export default (props: { name: string, color: string}) => {
+export default (props: { name: string, color: string }) => {
     return (
-        <div css={{ width: '120px', textAlign: 'center'}}>
+        <div css={{ width: '120px', textAlign: 'center' }}>
             <div css={{
                 [mediaMaxWidth(768)]: { fontSize: '0.8em' }
             }}>
