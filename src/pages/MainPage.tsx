@@ -5,19 +5,19 @@ import TopicVoter from '../components/TopicVoter';
 import { Link } from "react-router-dom";
 
 export default () => {
-    return (<div css={{ margin: '15vh 100px 100px'}}>
-        <h1 css={{ margin: '50px'}}>
+    return (<div css={{ margin: '15vh 100px 100px' }}>
+        <h1 css={{ margin: '50px' }}>
             <span css={{ fontSize: '2.5em' }}>
                 อยากให้
             </span>
-            <span css={{ margin: '0 30px', fontSize: '4.5em'}}>
+            <span css={{ margin: '0 30px', fontSize: '4.5em' }}>
                 ภาษี
             </span>
             <span css={{ fontSize: '2.5em' }}>
                 ไปไหน?
             </span>
         </h1>
-        <div css={{display: 'flex', justifyContent: 'space-between'}}>
+        <div css={{ display: 'flex', justifyContent: 'space-between' }}>
             {topic.map(item => {
                 return (<TopicVoter name={item.name} color={item.color} />);
             })}
