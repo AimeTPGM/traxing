@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
-import React from 'react';
+import { jsx } from '@emotion/core';
 import { mediaMaxWidth } from '../util';
 
 export default (props: { name: string, color: string }) => {

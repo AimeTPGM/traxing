@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
-import React from 'react';
+import { jsx } from '@emotion/core';
 import TopicVoter from '../components/TopicVoter';
 import { Link } from "react-router-dom";
 
