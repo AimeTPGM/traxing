@@ -19,7 +19,7 @@ export default () => {
         </h1>
         <div css={{ display: 'flex', justifyContent: 'space-between' }}>
             {topic.map(item => {
-                return (<TopicVoter name={item.name} color={item.color} />);
+                return (<TopicVoter key={item.id} name={item.name} color={item.color} />);
             })}
         </div>
         <div css={{ textAlign: 'center', margin: '50px 0' }}>
@@ -29,39 +29,48 @@ export default () => {
 };
 
 const topic = [
-    {
+    {   
+        id: 'education',
         name: 'การศึกษา',
         color: '#9a4dff'
     },
     {
+        id: 'economic',
         name: 'เศรษฐกิจ',
         color: '#4d5bff'
     },
     {
+        id: 'farm',
         name: 'การเกษตร',
         color: '#4dd6ff'
     },
     {
+        id: 'health',
         name: 'สาธารณสุข',
         color: '#4dffc5'
     },
     {
+        id: 'transport',
         name: 'คมนาคม',
         color: '#ffe94e'
     },
     {
+        id: 'tech',
         name: 'เทคโนโลยี',
         color: '#ffa447'
     },
     {
+        id: 'environment',
         name: 'สิ่งแวดล้อม',
         color: '#ff6947'
     },
     {
+        id: 'security',
         name: 'ความมั่นคง',
         color: '#ff4747'
     },
     {
+        id: 'justice',
         name: 'ยุติธรรม',
         color: '#999'
     },
