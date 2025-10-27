@@ -1,75 +1,76 @@
-# React + TypeScript + Vite
+# Traxing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Demo: https://aimetpgm.github.io/traxing/
 
-Currently, two official plugins are available:
+<img width="1680" alt="Screen Shot 2563-10-24 at 03 22 29" src="https://user-images.githubusercontent.com/5433758/97050803-3c94b600-15a8-11eb-8b63-37fca963201f.png">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project aims to collect the votes from Thai ppl on social media to visualize where they wish their paid tax will go to.
 
-## React Compiler
+- Education
+- Economic
+- Agriculture
+- Medical
+- Transportation
+- Technology
+- Environment
+- Country's Security
+- Social Justice
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+respectively
 
-Note: This will impact Vite dev & build performances.
+# start the contribution
 
-## Expanding the ESLint configuration
+to run the project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+npm i
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+it will run at `localhost:3000`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+starting from `/src/App` there will be a router to each pages 
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+`/src/pages/MainPage` is the main page of the app :) 
+
+# project structure
+
 ```
+src
+|
+|_ assets
+|
+|_ pages
+|
+|_ components 
+|
+|_ containers
+
+```
+
+asset is for keeping photos, icons, fonts, etc
+
+pages contains page of the app
+
+components is for keeping the components of the app
+
+containers is for keeping wrapper of a content section. If you are creating a new container, please use `className={'container'}`
+
+
+# lib in this project
+
+## CSS
+https://github.com/emotion-js/emotion
+
+
+## Router
+
+we use react router (but now we have only a single page, lol) so if you wanna add more page please refer to this material
+
+https://reactrouter.com/web/guides/quick-start
+https://medium.com/@mossila/%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99-react-route-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-typescript-e7dc70885122
+https://medium.com/react-courses/how-to-integrate-routing-in-typescript-project-with-react-router-v5-2-0-a6b0ab160a1b
+
+# UnderDevelopment ?
+
+you can use component `<UnderDevelopment />` as a mark of any part of screen that's underdevelopment :) 
